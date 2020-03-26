@@ -12,6 +12,11 @@ public class DiscountCountChecker {
 
 //        TODO implements result
         double result = 0.0;
+        if (price > 1000){
+            result = price - price/100*15;
+        }else{
+            System.out.println("Discount not available");
+        }
 
         return result;
     }
